@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import "./styles/Work.css";
 import WorkImage from "./WorkImage";
+import { publicUrl } from "../utils/publicUrl";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects: {
@@ -18,7 +19,7 @@ const projects: {
     tools: `Next.js 14, Claude API, Supabase pgvector
 Hybrid RAG, IRS Form Generation
 Tax Treaty Engine`,
-    image: "/images/taxbuddy.png",
+    image: publicUrl("images/taxbuddy.png"),
     link: "https://github.com/pchhonkar/F1-TaxHelp",
   },
   {
@@ -29,7 +30,7 @@ Tax Treaty Engine`,
     tools: `CrewAI, Ollama (llama3.1), FastAPI
 Next.js 13.5, Python, Pandas
 SSE Streaming`,
-    image: "/images/agentic-pim.png",
+    image: publicUrl("images/agentic-pim.png"),
     link: "https://github.com/pchhonkar/BetterCommerce",
   },
   {
@@ -37,7 +38,7 @@ SSE Streaming`,
     category: "Multi-Modal AI Pipeline for Automated Intelligence",
     tools: `RAG Retrieval, Fine-Tuned Inference
 Cross-Format Conversion`,
-    image: "/images/omniflowai.png",
+    image: publicUrl("images/omniflowai.png"),
     link: "https://github.com/pchhonkar/OmniFlowAI-A-Unified-Multi-Modal-Intelligence-Pipeline",
   },
   {
@@ -49,7 +50,7 @@ Cross-Format Conversion`,
     tools: `ViT Encoder, Cross-Attention, GPT-2 Medical Decoder
 PyTorch · ViT-Base · GPT-2 · ClinicalBERT · HuggingFace Transformers · Streamlit
 SafeTensors · NLTK · scikit-learn · Pillow · NumPy · Git LFS · BPE Tokenizer · AdamW · CUDA`,
-    image: "/images/medteller.png",
+    image: publicUrl("images/medteller.png"),
     link: "https://github.com/rishikathakre/MedTeller",
   },
 ];
